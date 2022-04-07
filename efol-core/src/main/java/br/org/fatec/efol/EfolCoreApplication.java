@@ -1,4 +1,4 @@
-package org.fatec.efolcore;
+package br.org.fatec.efol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package org.fatec.efolcore;
+package br.org.fatec.efol;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

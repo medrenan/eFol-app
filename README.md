@@ -1,43 +1,43 @@
+<h1 align="center">  API 5° Semestre </h1>
+<p align="center">
+                     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">                                      
+                     <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot">
+                     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
+                     <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB icon">
+                     <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native icon">
 
----
-
-<body>
-        <h1 align="center">eFol ✈️</h1>
-</body>
-<body>
-        <div align="center">
-            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java icon">
-            <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL icon">
-            <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB icon">
-        </div>
-        <div align="center">
-            <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native icon">
-            <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript icon">
-        </div>
-        <div align="right">
-            <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">
-        </div>
-        <div align="right">
+<h2 align="right">
+        <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">   
             <img src="https://img.shields.io/badge/sprint-1-blue?style=for-the-badge&logo=appveyor" alt="First sprint">
-        </div>
-</body>
+            
+# Índice
+- [About](#about)
+  - [Project In Operation](#project-in-operation)
+  - [Sprint Cards](#sprint-cards)
+  - [Delivery Schedule](#delivery-schedule)
+- [Team](#team)
 
----
+# About 
 
-# Index
-- [About](#about-)
-- [Deliveries](#deliveries-)
-- [Team](#team-)
+In progress
+        
+# Project In Operation
+        
+In progress        
+        
+# Sprint Cards
+        
+In progress        
+        
+# Delivery Schedule
+    
+| Sprints | Datas |
+| --- | --- | 
+| Sprint 1 | 25/03 a 14/04 | 
+| Sprint 2 | 25/04 a 15/05 | 
+| Sprint 3 | 16/05 a 05/06 | 
 
-# About 📱
-
-// aqui uma breve descrição do app
-
-# Deliveries 🛬
-
-// card das entregas com breve descrição
-
-# Team 👩‍💻👨‍💻
+# Team 
 
 <body>
         <div align="center">

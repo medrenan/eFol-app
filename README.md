@@ -23,7 +23,9 @@
   
 # Backlog
 
-In progress
+Nós dividimos as funçôes do cliente e administrador que serão implementadas durante todo o projeto.
+ 
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog.png">
         
 # Project In Operation
         

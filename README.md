@@ -35,7 +35,7 @@ In progress
         
 # Sprint Cards
   
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/card-sprint-1.png" height="350px">
+<img src="https://github.com/medrenan/eFol-app/blob/sprint-1/docs/SprintCard/card-sprint-1.png" height="350px">
 
 # Burndown da sprint
 

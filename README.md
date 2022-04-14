@@ -22,6 +22,8 @@
 <p align="justify"> Nossa empresa parceira possui diversos clientes ao redor do mundo, proprietários de vários veículos que por algumas vezes dão algum problema especifico. Estes podem ser generalizados e com isso a empresa não sabe se os clientes estão acessando e adotando as recomendações do fabricante, que são enviados em documentos para auxiliar na disponibilidade e operação do equipamento. Logo foi proposto o desafio de resolver esse problema, por meio de um aplicativo para notificar os clientes sobre atualizações de FOLs , que irão conter novas informações sobre problemas recorrentes que podem acontecer em seus veículos. </p>
   
 # Mockup
+  
+  <img src="https://github.com/medrenan/eFol-app/blob/sprint-1/docs/Mockup/Mockup.png">
         
 # Project In Operation
         
@@ -32,6 +34,8 @@ In progress
 <img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/card-sprint-1.png" height="350px">
 
 # Burndown
+  
+  <img src="https://github.com/medrenan/eFol-app/blob/sprint-1/docs/Burndown/Burndown-sprint-1.png">
   
        
 

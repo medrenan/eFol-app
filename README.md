@@ -1,43 +1,50 @@
+<h1 align="center">  :cloud: SkyFOL </h1>
+<p align="center">
+                     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">                                      
+                     <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot">
+                     <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
+                     <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB icon">
+                     <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native icon">
 
----
-
-<body>
-        <h1 align="center">eFol ✈️</h1>
-</body>
-<body>
-        <div align="center">
-            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java icon">
-            <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL icon">
-            <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB icon">
-        </div>
-        <div align="center">
-            <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native icon">
-            <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript icon">
-        </div>
-        <div align="right">
-            <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">
-        </div>
-        <div align="right">
+<h2 align="right">
+        <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">   
             <img src="https://img.shields.io/badge/sprint-1-blue?style=for-the-badge&logo=appveyor" alt="First sprint">
-        </div>
-</body>
+            
+# Índex
+- [About](#about)
+  - [Backlog](#backlog)
+  - [Project In Operation](#project-in-operation)
+  - [Sprint Cards](#sprint-cards)
+  - [Delivery Schedule](#delivery-schedule)
+- [Team](#team)
 
----
+#  About 
 
-# Index
-- [About](#about-)
-- [Deliveries](#deliveries-)
-- [Team](#team-)
+<p align="justify"> Nossa empresa parceira possui diversos clientes ao redor do mundo, proprietários de vários veículos que por algumas vezes dão algum problema especifico. Estes podem ser generalizados e com isso a empresa não sabe se os clientes estão acessando e adotando as recomendações do fabricante, que são enviados em documentos para auxiliar na disponibilidade e operação do equipamento. Logo foi proposto o desafio de resolver esse problema, por meio de um aplicativo para notificar os clientes sobre atualizações de FOLs, que irão conter novas informações sobre problemas recorrentes que podem acontecer em seus veículos. </p>
+  
+# Backlog
 
-# About 📱
+Nós dividimos as funções do cliente e administrador que serão implementadas durante todo o projeto.
+ 
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog.png">
+        
+# Project In Operation
+        
+In progress        
+        
+# Sprint Cards
+        
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/card-sprint-1.png" height="350px">        
+        
+# Delivery Schedule
+    
+| Sprints | Datas |
+| --- | --- | 
+| Sprint 1 | 25/03 a 14/04 | 
+| Sprint 2 | 25/04 a 15/05 | 
+| Sprint 3 | 16/05 a 05/06 | 
 
-// aqui uma breve descrição do app
-
-# Deliveries 🛬
-
-// card das entregas com breve descrição
-
-# Team 👩‍💻👨‍💻
+# Team
 
 <body>
         <div align="center">

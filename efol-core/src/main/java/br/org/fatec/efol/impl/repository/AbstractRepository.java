@@ -8,7 +8,6 @@ public abstract class AbstractRepository<ENTITY> {
 
     protected Class<ENTITY> entityClass;
 
-    @PersistenceContext
     private EntityManager em;
 
     protected AbstractRepository(Class<ENTITY> entityClass) {
@@ -16,11 +15,15 @@ public abstract class AbstractRepository<ENTITY> {
     }
 
     public void persist(ENTITY entity){
-        this.em.persist(entity);
+        this.getEm().persist(entity);
+    }
+
+    public ENTITY merge(ENTITY entity){
+        return this.getEm().merge(entity);
     }
 
     public ENTITY findById(Long id){
-        return this.em.find(this.entityClass, id);
+        return this.getEm().find(this.entityClass, id);
     }
 
     public List<ENTITY> findAll() {
@@ -30,27 +33,33 @@ public abstract class AbstractRepository<ENTITY> {
 
     public ENTITY getReference(Long id){
         try {
-            Query query = this.em.createQuery("SELECT id FROM " + this.entityClass.getSimpleName() + " e WHERE e.id = :id");
+            Query query = this.getEm().createQuery("SELECT id FROM " + this.entityClass.getSimpleName() + " e WHERE e.id = :id");
             query.setParameter("id", id);
             query.getSingleResult();
         } catch (NoResultException e) {
             String entityName = entityClass.getSimpleName();
             throw new EntityNotFoundException("Cannot find " + entityName + " with id " + id);
         }
-        ENTITY reference = this.em.getReference(this.entityClass, id);
+        ENTITY reference = this.getEm().getReference(this.entityClass, id);
         return reference;
     }
 
     @Transactional
     public void remove(Long id){
         ENTITY reference = this.getReference(id);
-        this.em.remove(reference);
+        this.getEm().remove(reference);
+    }
+
+    public int countAll(){
+        Query query = em.createQuery("select count(x) from " + this.entityClass.getSimpleName() + " x");
+        return query.getFirstResult();
     }
 
     public EntityManager getEm() {
         return em;
     }
 
+    @PersistenceContext
     public void setEm(EntityManager em) {
         this.em = em;
     }

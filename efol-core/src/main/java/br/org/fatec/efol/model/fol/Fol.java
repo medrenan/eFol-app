@@ -3,12 +3,13 @@ package br.org.fatec.efol.model.fol;
 import br.org.fatec.efol.model.equipment.Equipment;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "EFOL_FOL")
-public class Fol {
+public class Fol implements Serializable {
 
     private Long id;
     private Equipment equipment;
@@ -21,10 +22,10 @@ public class Fol {
     private Integer revisionNumber;
     private Date revisionDate;
     private String remarks;
-    private List<Keyword> keywordList;
+    private Set<Keyword> keywords;
 
     @ManyToOne
-    @JoinColumn(name = "EQUIP_ID", nullable = false)
+    @JoinColumn(name = "EQUIPMENT_ID")
     public Equipment getEquipment() {
         return equipment;
     }
@@ -61,7 +62,7 @@ public class Fol {
     }
 
     @ManyToOne
-    @JoinColumn(name = "FOL_CATEGORY_ID", nullable = false)
+    @JoinColumn(name = "CATEGORY_ID")
     public FolCategory getCategory() {
         return category;
     }
@@ -115,14 +116,16 @@ public class Fol {
         this.remarks = remarks;
     }
 
-    @OneToMany
-    @JoinColumn(name = "KEYWORD_ID", nullable = false)
-    public List<Keyword> getKeywordList() {
-        return keywordList;
+    @ManyToMany
+    @JoinTable(name = "EFOL_FOL_KEYWORD", joinColumns = {
+            @JoinColumn(name = "FOL_ID", referencedColumnName = "ID")}, inverseJoinColumns = {
+            @JoinColumn(name = "KEYWORD_ID", referencedColumnName = "ID")})
+    public Set<Keyword> getKeywords() {
+        return keywords;
     }
 
-    public void setKeywordList(List<Keyword> keywordList) {
-        this.keywordList = keywordList;
+    public void setKeywords(Set<Keyword> keywordList) {
+        this.keywords = keywordList;
     }
 
     public void setId(Long id) {

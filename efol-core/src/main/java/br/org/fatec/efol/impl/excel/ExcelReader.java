@@ -112,7 +112,6 @@ public class ExcelReader {
             if(keyword == null){
                 keyword = new Keyword();
                 keyword.setName(keywordName);
-                System.out.println("----------------------------------------> "+ keywordName);
                 this.keywordRepository.persist(keyword);
             }
 

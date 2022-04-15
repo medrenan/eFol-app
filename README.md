@@ -1,4 +1,4 @@
-<h1 align="center">  :cloud: SkyFOL </h1>
+<h1 align="center">  🚙 GroundFOL </h1>
 <p align="center">
                      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">                                      
                      <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot">
@@ -20,21 +20,25 @@
 
 #  About 
 
-<p align="justify"> Nossa empresa parceira possui diversos clientes ao redor do mundo, proprietários de vários veículos que por algumas vezes dão algum problema especifico. Estes podem ser generalizados e com isso a empresa não sabe se os clientes estão acessando e adotando as recomendações do fabricante, que são enviados em documentos para auxiliar na disponibilidade e operação do equipamento. Logo foi proposto o desafio de resolver esse problema, por meio de um aplicativo para notificar os clientes sobre atualizações de FOLs, que irão conter novas informações sobre problemas recorrentes que podem acontecer em seus veículos. </p>
+<p align="justify"> Our partner company have several customers around the world, owners of several vehicles that sometimes have a specific problem. These can be generalized and with that the company dont  know if the customers are accessing and adopting the manufacturer's recommendations, which are sent in documents to assist in the availability and operation of the equipment. Soon the challenge of solving this problem was proposed, through an application to notify customers about updates of FOLs, which will contain new information about recurring problems that may happen in their vehicles.</p>
   
 # Backlog
 
-Nós dividimos as funções do cliente e administrador que serão implementadas durante todo o projeto.
+We have split the client and administrator roles that will be implemented throughout the project.
  
 <img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog.png">
+
         
 # Project In Operation
-        
-In progress        
+
+<p align="justify">
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint1/Login.gif">
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint1/Search-doc.gif">
+</p>
         
 # Sprint Cards
         
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/card-sprint-1.png" height="350px">        
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint1/card-sprint-1.png" height="350px">        
         
 # Delivery Schedule
     

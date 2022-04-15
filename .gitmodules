@@ -1,0 +1,3 @@
+[submodule "FrontEnd-API"]
+	path = FrontEnd-API
+	url = https://github.com/nicursino/FrontEnd-API.git

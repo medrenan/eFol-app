@@ -4,8 +4,8 @@ import br.org.fatec.efol.impl.repository.EquipmentRepository;
 import br.org.fatec.efol.model.equipment.Equipment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service

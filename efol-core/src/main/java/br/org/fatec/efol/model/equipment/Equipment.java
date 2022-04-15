@@ -1,10 +1,11 @@
 package br.org.fatec.efol.model.equipment;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "EFOL_EQUIPMENT")
-public class Equipment {
+public class Equipment implements Serializable {
 
     private Long id;
     private String name;

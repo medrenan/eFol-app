@@ -4,8 +4,8 @@ import br.org.fatec.efol.impl.repository.KeywordRepository;
 import br.org.fatec.efol.model.fol.Keyword;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -14,7 +14,6 @@ public class KeywordService {
 
     @Autowired
     KeywordRepository repository;
-
     public Long create(Keyword keyword){
         if(keyword == null){
             return null;

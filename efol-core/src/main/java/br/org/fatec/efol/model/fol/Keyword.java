@@ -1,10 +1,11 @@
 package br.org.fatec.efol.model.fol;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "EFOL_KEYWORD")
-public class Keyword {
+public class Keyword implements Serializable {
 
     private Long id;
     private String name;
@@ -25,6 +26,6 @@ public class Keyword {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {
-        return id;
+        return this.id;
     }
 }

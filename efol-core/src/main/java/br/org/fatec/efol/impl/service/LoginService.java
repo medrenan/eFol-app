@@ -1,7 +1,7 @@
 package br.org.fatec.efol.impl.service;
 
 import br.org.fatec.efol.impl.repository.LoginRepository;
-import br.org.fatec.efol.model.users.User;
+import br.org.fatec.efol.model.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

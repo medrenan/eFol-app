@@ -23,8 +23,19 @@ public class Fol implements Serializable {
     private Date revisionDate;
     private String remarks;
     private Set<Keyword> keywords;
+    private FolPDF folPDF;
 
-    @ManyToOne
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Long getId() {
+        return id;
+    }
+
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "EQUIPMENT_ID")
     public Equipment getEquipment() {
         return equipment;
@@ -61,7 +72,7 @@ public class Fol implements Serializable {
         this.issueDescription = issueDescription;
     }
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "CATEGORY_ID")
     public FolCategory getCategory() {
         return category;
@@ -116,10 +127,10 @@ public class Fol implements Serializable {
         this.remarks = remarks;
     }
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "EFOL_FOL_KEYWORD", joinColumns = {
-            @JoinColumn(name = "FOL_ID", referencedColumnName = "ID")}, inverseJoinColumns = {
-            @JoinColumn(name = "KEYWORD_ID", referencedColumnName = "ID")})
+            @JoinColumn(name = "FOL_ID")}, inverseJoinColumns = {
+            @JoinColumn(name = "KEYWORD_ID")})
     public Set<Keyword> getKeywords() {
         return keywords;
     }
@@ -128,13 +139,13 @@ public class Fol implements Serializable {
         this.keywords = keywordList;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "FOL_PDF_ID")
+    public FolPDF getFolPDF() {
+        return folPDF;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long getId() {
-        return id;
+    public void setFolPDF(FolPDF folPDF) {
+        this.folPDF = folPDF;
     }
 }

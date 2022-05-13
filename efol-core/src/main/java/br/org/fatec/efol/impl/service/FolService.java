@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -41,7 +42,7 @@ public class FolService {
 
         // Validate necessary parameters
         this.validateInsertionParameters(fol);
-        repository.merge(fol);
+        repository.persist(fol);
 
         return fol.getId();
     }
@@ -55,18 +56,6 @@ public class FolService {
         return id;
     }
 
-    public Fol find(Long id){
-        if (id == null){
-            return null;
-        }
-
-        return this.repository.findById(id);
-    }
-
-    public List<Fol> findAll(){
-        return this.repository.findAll();
-    }
-
     public Boolean importFols() throws IOException, InvalidFormatException {
         File excelFile = new File("efol-core/src/main/resources/static/excel/fols.xlsx");
         List<Fol> fols = folImporter.importExcel(excelFile);
@@ -74,7 +63,7 @@ public class FolService {
             return false;
         }
         for(Fol fol : fols){
-            this.repository.merge(fol);
+            create(fol);
         }
 
         return true;

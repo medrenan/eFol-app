@@ -1,7 +1,9 @@
 package br.org.fatec.efol.controller;
 
+import br.org.fatec.efol.impl.service.FolSearchService;
 import br.org.fatec.efol.impl.service.FolService;
 import br.org.fatec.efol.model.fol.Fol;
+import br.org.fatec.efol.model.fol.Keyword;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +18,9 @@ public class FolController {
     @Autowired
     FolService service;
 
+    @Autowired
+    FolSearchService searchService;
+
     @PostMapping(value = "/create")
     public Long create(@RequestBody Fol fol){
         return this.service.create(fol);
@@ -23,12 +28,17 @@ public class FolController {
 
     @GetMapping(value = "/find/{id}")
     public Fol find(@PathVariable("id") Long id) {
-        return this.service.find(id);
+        return this.searchService.find(id);
+    }
+
+    @GetMapping(value = "/findByKeyword")
+    public List<Fol> findByKeyword(@RequestBody Keyword keyword) {
+        return this.searchService.findByKeyword(keyword);
     }
 
     @GetMapping(value = "/findAll")
     public List<Fol> findAll(){
-        return this.service.findAll();
+        return this.searchService.findAll();
     }
 
     @PostMapping(value = "/remove/{id}")

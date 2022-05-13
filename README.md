@@ -1,4 +1,4 @@
-<h1 align="center">  🚙 GroundFOL </h1>
+<h1 align="center">  🚙 G-FOL </h1>
 <p align="center">
                      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">                                      
                      <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot">
@@ -8,11 +8,12 @@
 
 <h2 align="right">
         <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">   
-            <img src="https://img.shields.io/badge/sprint-1-blue?style=for-the-badge&logo=appveyor" alt="First sprint">
+            <img src="https://img.shields.io/badge/sprint-2-blue?style=for-the-badge&logo=appveyor" alt="Second= sprint">
             
 # Índex
 - [About](#about)
   - [Backlog](#backlog)
+  - [User Backlog](#user-backlog)
   - [Project In Operation](#project-in-operation)
   - [Sprint Cards](#sprint-cards)
   - [Delivery Schedule](#delivery-schedule)
@@ -21,8 +22,12 @@
 #  About 
 
 <p align="justify"> Our partner company have several customers around the world, owners of several vehicles that sometimes have a specific problem. These can be generalized and with that the company dont  know if the customers are accessing and adopting the manufacturer's recommendations, which are sent in documents to assist in the availability and operation of the equipment. Soon the challenge of solving this problem was proposed, through an application to notify customers about updates of FOLs, which will contain new information about recurring problems that may happen in their vehicles.</p>
-  
+
 # Backlog
+
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog-total/Backlog_total.png">
+  
+# User Backlog
 
 We have split the client and administrator roles that will be implemented throughout the project.
  
@@ -32,13 +37,12 @@ We have split the client and administrator roles that will be implemented throug
 # Project In Operation
 
 <p align="justify">
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint1/Login.gif">
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint1/Search-doc.gif">
+-> under development
 </p>
         
 # Sprint Cards
         
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint1/card-sprint-1.png" height="350px">        
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint%202/sprint%202.png" height="350px">        
         
 # Delivery Schedule
     

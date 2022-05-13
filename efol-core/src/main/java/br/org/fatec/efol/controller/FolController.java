@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
+@CrossOrigin(origins= "*")
 @RestController
 @RequestMapping(value = "/fol", produces = "application/json;charest=UTF-8")
 public class FolController {

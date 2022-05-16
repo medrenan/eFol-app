@@ -37,7 +37,8 @@ We have split the client and administrator roles that will be implemented throug
 # Project In Operation
 
 <p align="justify">
--> under development
+
+  <img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint%202/application.gif">
 </p>
         
 # Sprint Cards

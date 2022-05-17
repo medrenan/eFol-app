@@ -125,6 +125,14 @@ paths:
       responses:
         "200":
           description: "successful operation"
+          schema:
+            type: "boolean"
+            default: "true"
+        "500":
+          description: "operation failed"
+          schema:
+            type: "boolean"
+            default: "false"
   
   # Equipment endpoints:
   /equipment/create:

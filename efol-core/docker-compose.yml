@@ -1,0 +1,31 @@
+services:
+  gfol-app:
+    image: az3vedo/gfol-app:latest
+    ports: [
+      8080:8080
+    ]
+    networks:
+      - application
+    restart: on-failure:3
+  
+  gfol-db:
+    image: postgres:14 
+    ports: [
+      5432
+    ]
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+      - POSTGRES_DB=efol
+
+    networks:
+      - application
+    
+    volumes:
+      - /var/lib/postgres
+
+    restart: always
+
+networks:
+  application:
+    driver: bridge

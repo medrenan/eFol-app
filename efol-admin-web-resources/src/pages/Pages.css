@@ -1,0 +1,24 @@
+.container {
+    width: auto;
+    height: auto;
+    background-color: #f7f8fa;
+    position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 80%;
+    max-height: 50%;
+    overflow: auto;
+    border-radius: 2%;
+}
+
+.title {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px rgb(182, 182, 182);
+}

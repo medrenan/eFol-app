@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins= "*")
 @RestController
 @RequestMapping(value = "/keyword", produces = "application/json;charest=UTF-8")
 public class KeywordController {

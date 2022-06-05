@@ -1,0 +1,425 @@
+swagger: "2.0"
+info:
+  description: "This is the API documentation for the eFol project"
+  version: "1.0.0"
+  title: "Swagger gFol"
+tags:
+  - name: "Fol"
+    description: "Fol management endpoints"
+  - name: "Equipment"
+    description: "Equipment management endpoints"
+  - name: "Keyword"
+    description: "Keyword management endpoints"
+  - name: "FolCategory"
+    description: "FolCategory management endpoints"
+schemes:
+  - "https"
+  - "http"
+  
+paths:
+  # Fol endpoints:
+  /fol/create:
+    post:
+      tags:
+      - "Fol"
+      summary: "Create a new FOL"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Fol object that needs to be added"
+        schema:
+          $ref: "#/definitions/Fol"
+      responses:
+        "405":
+          description: "Invalid input"
+  /fol/find/{id}:
+    get:
+      tags:
+      - "Fol"
+      summary: "Find fol by id"
+      description: "Provide the required fol id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Fol id considered for this filter"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Fol"
+        "400":
+          description: "Invalid fol id or fol not registered"
+  /fol/findAll:
+    get:
+      tags:
+      - "Fol"
+      summary: "Finds all registered fols"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Fol"
+  /fol/findByKeyword:
+    get:
+      tags:
+      - "Fol"
+      summary: "Finds Fols by Keywords"
+      description: "Provide one or more registered keywords"
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: "body"
+        description: "Keywords considered for this filter"
+        schema:
+          type: "array"
+          items:
+            $ref: "#/definitions/Keyword"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Keyword"
+        "400":
+          description: "Invalid keyword"
+  /fol/remove/{id}:
+    post:
+      tags:
+      - "Fol"
+      summary: "Remove fol by id"
+      description: "Provide the required fol id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Fol id to remove"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid id or id not registered as a Fol id"
+  /fol/importExcel:
+    get:
+      tags:
+      - "Fol"
+      summary: "Import all fols on the local excel"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "boolean"
+            default: "true"
+        "500":
+          description: "operation failed"
+          schema:
+            type: "boolean"
+            default: "false"
+  
+  # Equipment endpoints:
+  /equipment/create:
+    post:
+      tags:
+      - "Equipment"
+      summary: "Create a new Equipment"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Equipment object that needs to be added"
+        schema:
+          $ref: "#/definitions/Equipment"
+      responses:
+        "405":
+          description: "Invalid input"
+  /equipment/find/{id}:
+    get:
+      tags:
+      - "Equipment"
+      summary: "Finds equipment by id"
+      description: "Provide the required fol id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "Fol id considered for this filter"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Equipment"
+        "400":
+          description: "Invalid equipment"
+  /equipment/findAll:
+    get:
+      tags:
+      - "Equipment"
+      summary: "Finds all registered equipments"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Equipment"
+  /equipment/remove/{id}:
+    post:
+      tags:
+      - "Equipment"
+      summary: "Remove equipment by id"
+      description: "Provide the required equipment id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "equipment id to remove"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid id or id not registered as a Equipment id"
+
+  # Keyword endpoints:
+  /keyword/create:
+    post:
+      tags:
+      - "Keyword"
+      summary: "Create a new Keyword"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Keyword object that needs to be added"
+        schema:
+          $ref: "#/definitions/Keyword"
+      responses:
+        "405":
+          description: "Invalid input"
+  /keyword/find/{id}:
+    get:
+      tags:
+      - "Keyword"
+      summary: "Find keyword by id"
+      description: "Provide the required keyword id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "keyword id considered for this filter"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Keyword"
+        "400":
+          description: "Invalid keyword"
+  /keyword/findAll:
+    get:
+      tags:
+      - "Keyword"
+      summary: "Finds all registered keywords"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Keyword"
+  /keyword/remove/{id}:
+    post:
+      tags:
+      - "Keyword"
+      summary: "Remove keyword by id"
+      description: "Provide the required keyword id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "keyword id to remove"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid id or id not registered as a Keyword id"
+
+  # FolCategory endpoints:
+  /folCategory/create:
+    post:
+      tags:
+      - "FolCategory"
+      summary: "Create a new FolCategory"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "FolCategory object that needs to be added"
+        schema:
+          $ref: "#/definitions/Keyword"
+      responses:
+        "405":
+          description: "Invalid input"
+  /folCategory/find/{id}:
+    get:
+      tags:
+      - "FolCategory"
+      summary: "Find folCategory by id"
+      description: "Provide the required folCategory id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "folCategory id considered for this filter"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/FolCategory"
+        "400":
+          description: "Invalid folCategory"
+  /folCategory/findAll:
+    get:
+      tags:
+      - "FolCategory"
+      summary: "Finds all registered folCategory"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/FolCategory"
+  /folCategory/remove/{id}:
+    post:
+      tags:
+      - "FolCategory"
+      summary: "Remove folCategory by id"
+      description: "Provide the required folCategory id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "folCategory id to remove"
+        type: "integer"
+        required: true
+      responses:
+        "200":
+          description: "successful operation"
+        "400":
+          description: "Invalid id or id not registered as a FolCategory id"
+
+# ------------  Definitions  -----------
+definitions:
+  Fol:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      equipment:
+        $ref: "#/definitions/Equipment"
+      title:
+        type: "string"
+        description: "Fol title"
+      applicability:
+        type: "string"
+        description: "Fol applicability"
+      issueDescription:
+        type: "string"
+        description: "Fol issue description"
+      folCategory:
+        $ref: "#/definitions/FolCategory"
+      statusFol:
+        enum:
+          - "IN_EFFECT"
+          - "CANCELLED"
+          - "INCORPORATED"
+      date:
+        type: "string"
+        format: "date-time"
+      revisionNumber:
+        type: "integer"
+        format: "int32"
+      revisionDate:
+        type: "string"
+        format: "date-time"
+      remarks:
+        type: "string"
+        description: "Fol remarks"
+      keywords:
+        type: "array"
+        description: "Fol Keyword array set"
+        items:
+          $ref: '#/definitions/Keyword'
+  FolCategory:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+  Equipment:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+  Keyword:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"

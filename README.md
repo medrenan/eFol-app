@@ -23,7 +23,7 @@
 
 We have split the client and administrator roles that will be implemented throughout the project.
  
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog.png">
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog-user/backlog.png">
   
  # Delivery Schedule 🗓
     
@@ -43,7 +43,7 @@ We have split the client and administrator roles that will be implemented throug
         
 # Sprint Cards ✉
         
-<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint%202/sprint%202.png" height="350px">        
+<img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint%203/sprint%203.png" height="350px">        
         
 
 

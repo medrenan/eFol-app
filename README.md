@@ -1,4 +1,4 @@
-<h1 align="center">  🚙 G-FOL </h1>
+<h1 align="center">  📱 G-FOL 🚗  </h1>
 <p align="center">
                      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white">                                      
                      <img src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot">
@@ -8,52 +8,46 @@
 
 <h2 align="right">
         <img src="https://img.shields.io/badge/status-ongoing-blue?style=for-the-badge&logo=appveyor" alt="Status: Ongoing">   
-            <img src="https://img.shields.io/badge/sprint-2-blue?style=for-the-badge&logo=appveyor" alt="Second= sprint">
+            <img src="https://img.shields.io/badge/sprint-3-blue?style=for-the-badge&logo=appveyor" alt="Second= sprint">
             
-# Índex
-- [About](#about)
-  - [Backlog](#backlog)
-  - [User Backlog](#user-backlog)
-  - [Project In Operation](#project-in-operation)
-  - [Sprint Cards](#sprint-cards)
-  - [Delivery Schedule](#delivery-schedule)
-- [Team](#team)
 
-#  About 
+#  About 📚
 
 <p align="justify"> Our partner company have several customers around the world, owners of several vehicles that sometimes have a specific problem. These can be generalized and with that the company dont  know if the customers are accessing and adopting the manufacturer's recommendations, which are sent in documents to assist in the availability and operation of the equipment. Soon the challenge of solving this problem was proposed, through an application to notify customers about updates of FOLs, which will contain new information about recurring problems that may happen in their vehicles.</p>
 
-# Backlog
+# Product Backlog 📍
 
 <img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog-total/Backlog_total.png">
   
-# User Backlog
+# User Backlog 📄
 
 We have split the client and administrator roles that will be implemented throughout the project.
  
 <img src="https://github.com/medrenan/eFol-app/blob/main/docs/Backlog/backlog.png">
+  
+ # Delivery Schedule 🗓
+    
+| Sprints | About | Datas |
+| --- | --- | --- | 
+| Sprint 1 | The user has access to the FOL view through the app | 25/03 a 14/04 | 
+| Sprint 2 | User integration with web admin system | 25/04 a 15/05 | 
+| Sprint 3 | In development | 16/05 a 05/06 | 
 
         
-# Project In Operation
+# Project In Operation 📱
 
 <p align="justify">
 
-  <img src="https://github.com/medrenan/eFol-app/blob/main/docs/Wireframes/Sprint%202/application.gif">
+  In development
 </p>
         
-# Sprint Cards
+# Sprint Cards ✉
         
 <img src="https://github.com/medrenan/eFol-app/blob/main/docs/SprintCard/Sprint%202/sprint%202.png" height="350px">        
         
-# Delivery Schedule
-    
-| Sprints | Datas |
-| --- | --- | 
-| Sprint 1 | 25/03 a 14/04 | 
-| Sprint 2 | 25/04 a 15/05 | 
-| Sprint 3 | 16/05 a 05/06 | 
 
-# Team
+
+# Team 👩‍💻👨‍💻
 
 <body>
         <div align="center">

@@ -32,9 +32,9 @@ public class FolController {
         return this.searchService.find(id);
     }
 
-    @GetMapping(value = "/findByKeyword")
-    public List<Fol> findByKeyword(@RequestBody Keyword keyword) {
-        return this.searchService.findByKeyword(keyword);
+    @PostMapping(value = "/findByKeyword")
+    public List<Fol> findByKeyword(@RequestBody List<Keyword> keywords) {
+        return this.searchService.findByKeyword(keywords);
     }
 
     @GetMapping(value = "/findAll")

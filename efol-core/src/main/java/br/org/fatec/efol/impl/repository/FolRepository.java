@@ -15,9 +15,9 @@ public class FolRepository extends AbstractRepository<Fol> {
         super(Fol.class);
     }
 
-    public List<Fol> findByKeyword(Keyword keyword){
-        Query query = this.getEm().createQuery("SELECT f FROM Fol f JOIN f.keywords k WHERE k.id = :keywordId");
-        query.setParameter("keywordId", keyword.getId());
+    public List<Fol> findByKeyword(List<Keyword> keywords){
+        Query query = this.getEm().createQuery("SELECT f FROM Fol f JOIN f.keywords k WHERE k in :keywords");
+        query.setParameter("keywords", keywords);
 
         return QueryTyper.getResultList(query);
     }

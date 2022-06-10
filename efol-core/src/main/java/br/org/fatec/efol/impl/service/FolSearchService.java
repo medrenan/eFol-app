@@ -24,12 +24,12 @@ public class FolSearchService {
         return this.repository.findById(id);
     }
 
-    public List<Fol> findByKeyword(Keyword keyword){
-        if(keyword == null){
+    public List<Fol> findByKeyword(List<Keyword> keywords){
+        if(keywords == null){
             return null;
         }
 
-        return this.repository.findByKeyword(keyword);
+        return this.repository.findByKeyword(keywords);
     }
 
     public List<Fol> findAll(){
